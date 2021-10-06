@@ -1,3 +1,3 @@
 # ToDoList-js
 
-  https://github.com/MyNameIsDmitriy/ToDoList-js.git
+  https://github.com/MyNameIsDmitriy/ToDoList-js.git/
