@@ -153,3 +153,19 @@ body {
 	color: rgb(197, 22, 139);
 	box-shadow: 0 6px orange;
 }
+
+
+/* todo.html start*/
+.flex-wrapper h1, .flex-wrapper h2 {
+	display: flex;
+  justify-content: center
+}
+
+.add-todo-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/* todo.html end*/
