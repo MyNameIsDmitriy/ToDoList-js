@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Righteous';
 
 	margin: 0 auto;
@@ -75,7 +75,7 @@ body {
 	height: 100%;
 }
 .main {
-	padding-top: 140px;
+	padding-top: 100px;
 
 	position: relative;
 	z-index: 1;
@@ -87,7 +87,7 @@ body {
 }
 
 .main__description {
-	height: 500px;
+	height: 350px;
 
 	display: flex;
 	flex-direction: column;
