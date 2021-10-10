@@ -65,7 +65,7 @@ body {
 	margin: 0 auto;
 
 	color: orange;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 }
 
 .background-image {
