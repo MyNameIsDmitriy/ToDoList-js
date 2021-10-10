@@ -18,15 +18,22 @@ const createTemplate = (task, index) => {
       <div class="description">${task.description}</div>
       <div class="buttons">
         <input onclick="completeTask(${index})" class="btn-complete" type="checkbox" ${task.completed ? 'checked': ''}>
-        <button class="btn-delete">Delete</button>
+        <button onclick="deleteTask(${index})" class="btn-delete">Delete</button>
       </div>
     </div>
   `
 }
 
+const filterTasks = () => {
+  const activeTasks = tasks.length && tasks.filter(item => item.completed == false);
+  const completedTasks = tasks.length && tasks.filter(item => item.completed == true);
+  tasks = [...activeTasks,...completedTasks];
+}
+
 const fillHtmlList = () => {
   taskWrap.innerHTML = "";
   if(tasks.length > 0) {
+    filterTasks();
     tasks.forEach((item, index) => {
       taskWrap.innerHTML += createTemplate(item, index);
     });
@@ -57,3 +64,9 @@ addTask.addEventListener('click', () => {
   fillHtmlList();
   deskTask.value = '';
 })
+
+const deleteTask = (index) => {
+  tasks.splice(index, 1);
+  updateLocal();
+  fillHtmlList();
+}
