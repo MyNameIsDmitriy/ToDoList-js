@@ -59,9 +59,11 @@ const completeTask = (index) => {
 }
 
 addTaskElement.addEventListener('click', () => {
-  tasks.push(new Task(descriptionTaskInput.value));
-  updateLocalStorage();
-  fillHtmlList();
+  if(descriptionTaskInput.value!='') {
+    tasks.push(new Task(descriptionTaskInput.value));
+    updateLocalStorage();
+    fillHtmlList();
+  }
   descriptionTaskInput.value = '';
 })
 
