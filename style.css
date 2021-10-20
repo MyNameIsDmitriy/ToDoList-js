@@ -49,6 +49,12 @@ table {
 }
 /* reset end */
 
+/*
+$tablet-width: 768px;
+$mobile-big-width: 414px;
+$mobile-small-width: 320px;
+*/
+
 * {
 	padding: 0;
 	margin: 0;
@@ -158,8 +164,9 @@ body {
 /* todo.html start*/
 .flex-wrapper button {
 	-webkit-appearance: none;
-		 -moz-appearance: none;
-					appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
 	border: 0;
 	border-radius: 5px;
 	background: rgb(100, 18, 73);
