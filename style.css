@@ -222,10 +222,19 @@ body {
 	justify-content: center;
 }
 
+.task-wrapper {
+	padding: 0px 20px;
+}
+
 .task-item {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 15px;
+}
+
+.description {
+	display: flex;	
+	align-items: center;
 }
 
 .buttons {
@@ -234,7 +243,7 @@ body {
 }
 
 .btn-complete {
-	width: 30px;
+	width: 40px;
 	height: 30px;
 }
 
