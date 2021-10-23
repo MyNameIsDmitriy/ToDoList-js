@@ -74,17 +74,11 @@ body {
 	background-repeat: repeat-y;
 }
 
-.background-image {
-	position: absolute;
-	z-index: 0;
-	max-width: 1440px;
-	height: 100%;
+.background-color {
+	background-color: #2b2828;
 }
 .main {
 	padding-top: 100px;
-
-	position: relative;
-	z-index: 1;
 }
 
 .wrapper {
@@ -128,8 +122,6 @@ body {
 
 .footer {
 	padding-top: 100px;
-	position: relative;
-	z-index: 1;
 }
 
 .nav {
