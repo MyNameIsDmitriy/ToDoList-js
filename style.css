@@ -49,11 +49,7 @@ table {
 }
 /* reset end */
 
-/*
---tablet-width: 768px;
---mobile-big-width: 414px;
---mobile-small-width: 320px;
-*/
+
 
 * {
 	padding: 0;
@@ -71,7 +67,6 @@ body {
 	margin: 0 auto;
 
 	color: orange;
-	background-repeat: repeat-y;
 }
 
 .background-color {
@@ -99,7 +94,6 @@ body {
 }
 
 .main__button {
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -136,6 +130,8 @@ body {
 }
 
 .nav__span {
+ padding-top: 25px;
+
 	display: flex;
 	align-items: center;
 }
@@ -150,6 +146,34 @@ body {
 	text-decoration-line: none;
 	color: rgb(197, 22, 139);
 	box-shadow: 0 6px orange;
+}
+
+@media (max-width: 1440px){
+	.wrapper {
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1200px){
+	.wrapper {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 992px){
+	.wrapper {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 768px){
+	.wrapper {
+		max-width: none;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
 }
 
 
