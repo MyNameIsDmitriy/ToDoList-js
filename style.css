@@ -1,0 +1,324 @@
+/* reset start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset end */
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 3rem;
+  font-family: 'Righteous';
+
+	margin: 0 auto;
+
+	color: orange;
+}
+
+.background-color {
+	background-color: #2b2828;
+}
+.main {
+	padding-top: 100px;
+}
+
+.wrapper {
+	margin: 0px auto;
+	padding: 0 30px;
+  max-width: 1440px;
+}
+
+.main__description {
+	height: 350px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.row {
+	display: inline-block;
+}
+
+.main__button {
+	margin: 20px 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-link {
+	text-decoration: none;
+	padding: 15px 15px;
+	color: orange;
+	border: 3px solid orange; 
+	border-radius: 35%;
+}
+
+.button-link:hover {
+	text-decoration: none;
+
+	color: rgb(197, 22, 139);
+	border: 3px solid rgb(197, 22, 139);
+}
+
+.footer {
+	padding-top: 100px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.li-padding {
+	padding-bottom: 20px;
+}
+
+.nav a {
+	line-height: 40px;
+}
+
+.nav__span {
+ padding-top: 25px;
+
+	display: flex;
+	align-items: center;
+}
+
+.nav a {
+	text-decoration-line: none;
+	box-shadow: 0 6px rgb(197, 22, 139);
+	color: orange;
+}
+
+.nav a:hover {
+	text-decoration-line: none;
+	color: rgb(197, 22, 139);
+	box-shadow: 0 6px orange;
+}
+
+@media (max-width: 1440px){
+	.wrapper {
+		padding: 0 50px;
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1200px){
+	.wrapper {
+		padding: 0 40px;
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 992px){
+	.main {
+		padding-top: 75px;
+	}
+
+	.wrapper {
+		padding: 0 30px;
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 768px){
+	.main {
+		padding-top: 75px;
+	}
+
+	.wrapper {
+		padding: 0 30px;
+		max-width: 590px;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.nav__span {
+		justify-content: center;
+	}
+
+	.footer {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 601px){
+	body {
+		font-size: 2.5rem;
+	}
+
+	.main {
+		padding-top: 50px;
+	}
+
+	.wrapper {
+		padding: 0 30px;
+		max-width: none;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.nav__span {
+		justify-content: center;
+	}
+
+	.footer {
+		padding-top: 50px;
+	}
+}
+
+
+/* todo.html start*/
+.flex-wrapper button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	border: 0;
+	border-radius: 5px;
+	background: rgb(100, 18, 73);
+	color: orange;
+	padding: 8px 16px;
+	font-size: 3rem;
+	font-family: inherit;
+}
+
+.flex-wrapper button:hover {
+	background: rgb(36, 36, 36);
+	cursor: pointer;
+}
+
+.flex-wrapper button:active {
+	outline: none;
+	box-shadow: 0 0 0 4px orange;
+	background: rgb(100, 18, 73);
+}
+
+.flex-wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+
+	position: relative;
+	z-index: 1;
+}
+
+.flex-wrapper h1, .flex-wrapper h2 {
+	display: flex;
+  justify-content: center;
+	padding-top: 75px;
+}
+
+.add-todo-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.task-wrapper {
+	padding: 0px 20px;
+}
+
+.task-item {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.description {
+	display: flex;	
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+.btn-complete {
+	width: 40px;
+	height: 30px;
+}
+
+.input-wrapper {
+	width: 550px;
+
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.input-text {
+	height: 46px;
+	width:100%;
+	font-size: 3rem;
+	color:orange;
+	background-color: rgb(100, 18, 73);
+
+	margin-right: 3px;
+}
+
+.checked {
+	opacity: 0.5;
+}
+
+/* todo.html end*/
